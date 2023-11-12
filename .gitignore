@@ -1,0 +1,11 @@
+.htaccess
+robots.txt
+sitemap.xml
+styles/styles-custom.css
+datasets/config.inc.php
+datasets/trash/*
+versions/
+!datasets/documents/.gitkeep
+!datasets/trash/.gitkeep
+!index.php
+nav/datasets/config.inc.php
