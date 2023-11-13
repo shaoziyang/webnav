@@ -1,6 +1,6 @@
 <?php
 
-$DT = 30;  // 自动改变壁纸时间，默认1天，86400秒，9代表禁用
+$DT = 86400;  // 自动改变壁纸时间，默认1天，86400秒，9代表禁用
 
 $file_last = 'scripts/last.txt';
 $file_css = 'styles/wallpaper.css';
