@@ -5,10 +5,10 @@ styles/styles-custom.css
 datasets/config.inc.php
 datasets/trash/*
 versions/
-!datasets/documents/.gitkeep
-!datasets/trash/.gitkeep
-!index.php
 nav/datasets/config.inc.php
 nav/scripts/last.txt
 nav/styles/wallpaper.css
 nav/scripts/counter.txt
+!datasets/documents/.gitkeep
+!datasets/trash/.gitkeep
+!index.php
