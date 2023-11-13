@@ -9,3 +9,6 @@ versions/
 !datasets/trash/.gitkeep
 !index.php
 nav/datasets/config.inc.php
+nav/scripts/last.txt
+nav/styles/wallpaper.css
+nav/scripts/counter.txt
