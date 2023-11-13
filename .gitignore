@@ -5,6 +5,8 @@ styles/styles-custom.css
 datasets/config.inc.php
 datasets/trash/*
 versions/
+test/
+draft.md
 nav/datasets/config.inc.php
 nav/scripts/last.txt
 nav/styles/wallpaper.css
