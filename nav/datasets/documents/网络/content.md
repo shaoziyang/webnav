@@ -8,10 +8,14 @@
 
 <b>邮箱</b><br>
 <a class="sxyhButton_02" target="_blank" href="https://126.com/" style="background-color:#1e7e3e;">126</a>
-<a class="sxyhButton_02" target="_blank" href="https://mail.163.com/" style="background-color:#d80a17;">163</a>
-<a class="sxyhButton_02" target="_blank" href="https://qiye.aliyun.com/" style="background-color:#ef4542;">阿里企业邮</a>
-<a class="sxyhButton_02" target="_blank" href="https://exmail.qq.com/login" style="background-color:#2984ef;">QQ邮箱</a>
-<a class="sxyhButton_02" target="_blank" href="https://outlook.live.com/" style="background-color:#0178d4;">outlook</a>
+<a class="sxyhButton_02" target="_blank" href="https://mail.163.com/" style="background-color:#d80a17;border:0px;">163</a>
+<a class="sxyhButton_02" target="_blank" href="https://mail.10086.cn/" style="background-color:#ffffff;color:#005bac;border:1px solid #005bac;">139</a>
+<a class="sxyhButton_02" target="_blank" href="https://mail.wo.cn/" style="background-color:#3a96fe;border:0px;">沃邮箱</a>
+<a class="sxyhButton_02" target="_blank" href="https://webmail30.189.cn" style="background-color:#5c8ecd;border:0px;">189</a>
+<a class="sxyhButton_02" target="_blank" href="https://qiye.aliyun.com/" style="background-color:#ef4542;border:0px;">阿里企业邮</a>
+<a class="sxyhButton_02" target="_blank" href="https://exmail.qq.com/login" style="background-color:#2984ef;border:0px;">QQ邮箱</a>
+<a class="sxyhButton_02" target="_blank" href="https://mail.sohu.com" style="background-color:#ffffff;color:#f80000;border:1px solid #000000;">搜狐邮箱</a>
+<a class="sxyhButton_02" target="_blank" href="https://outlook.live.com/" style="background-color:#0178d4;border:0px;;">outlook</a>
 
 <b>网盘</b><br>
 <a class="sxyhButton_02" target="_blank" href="https://pan.baidu.com/" style="background-color:transparent;color:#2bc2fe;">百度网盘</a>
@@ -40,6 +44,26 @@
 <a class="sxyhButton_03" target="_blank" href="https://note.youdao.com/" style="background-color:#5b89ef;">有道</a>
 <a class="sxyhButton_03" target="_blank" href="https://www.notion.so/" style="background-color:#f0f0f0;color:#000000">Notion</a>
 
+<b>其它</b><br>
+♦ <a target="_blank" href="https://yiyan.baidu.com/">文心一言</a> 
+<a target="_blank" href="https://qianwen.aliyun.com/">通义千问</a> 
+<a target="_blank" href="https://techday.sensetime.com/">商量</a> 
+<a target="_blank" href="https://tiangong.kunlun.com/">天工AI助手</a> 
+<a target="_blank" href="https://xinghuo.xfyun.cn/">讯飞星火</a> 
+<a target="_blank" href="https://https://moss.fastnlp.top/">Moss</a> 
+<a target="_blank" href="https://chat.ttext.cn/">思研Chat</a> <br>
+✦ <a target="_blank" href="https://www.mydrivers.com/zhuanti/tianti/01/">手机CPU天梯图</a> 
+<a target="_blank" href="https://www.notebookcheck.net/Mobile-Processors-Benchmark-List.2436.0.html">移动CPU对比</a> 
+<a target="_blank" href="https://send-anywhere.com/">SendAnywhere</a> 
+<a target="_blank" href="https://vscode.dev/">vscode</a> <br>
+♢ <a target="_blank" href="https://kodcloud.com/">可道云</a> 
+<a target="_blank" href="https://alist.nn.ci/zh/">AList</a> 
+<a target="_blank" href="https://os.tenfell.cn/">腾飞Webos</a> 
+<a target="_blank" href="https://www.zhenyunpan.com/">CloudDrive</a> <br>
+✧ <a target="_blank" href="https://www.debian.org/">Debian</a> 
+<a target="_blank" href="https://ubuntu.com/">Ubuntu</a> 
+<a target="_blank" href="https://archlinux.org/">ArchLinux</a> 
+<a target="_blank" href="https://endlessos.com/">Endless OS</a> 
 
 <style>
 body {
