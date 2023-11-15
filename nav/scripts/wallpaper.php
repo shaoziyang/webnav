@@ -89,4 +89,7 @@ if ($sav)
     }
 }
 
+$r = substr($image_new, 7);
+echo "<script>var back_image="."'$r';</script>";
+
 ?>
