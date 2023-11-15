@@ -298,7 +298,7 @@
 		<div class="divider"></div>
 		<div class="row">
 			<div class="col m5 offset-m1 hide-on-med-and-down">
-				<p class="left-align"><small><?php include 'scripts/showcounter.php'; ?>&emsp;<script>document.write('<a href="<?= $APP->PATH ?>scripts/changewallpaper.php" title='+back_image+'>更换背景</a>('+back_image+')');</script></small></p>
+				<p class="left-align"><small><?php include 'scripts/showcounter.php'; ?>&emsp;<script>document.write('<a href="<?= $APP->PATH ?>scripts/changewallpaper.php" title='+back_image+'>更换背景</a>(<a href="<?= $APP->PATH ?>scripts/showimagefile.php" title="显示背景图像列表">'+back_image+'</a>)');</script></small></p>
 			</div><!-- /col -->
 			<div class="col m5 hide-on-med-and-down">
 				<p class="right-align"><small><a href="https://github.com/shaoziyang/webnav" target="_blank"><b>随心远航</b>网址导航</a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
