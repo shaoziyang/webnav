@@ -4,8 +4,7 @@ Text Counter by http://www.free-php-counter.com
 You are allowed to remove advertising after you purchased a licence
 */
 
-
-$counter_filename = "scripts/counter.txt";
+$counter_filename = dirname(__FILE__)."/counter.txt";
 
 // get basic information
 $counter_ip = $_SERVER['REMOTE_ADDR'];

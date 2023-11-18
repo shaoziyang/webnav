@@ -6,7 +6,7 @@ You are allowed to remove advertising after you purchased a licence
 
 // settings
 
-$counter_filename = "scripts/counter.txt";
+$counter_filename = dirname(__FILE__)."/counter.txt";
 
 // get basic information
 
