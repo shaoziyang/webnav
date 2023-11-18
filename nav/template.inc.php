@@ -15,7 +15,6 @@
 <html lang="en">
 <head>
     <?php include "scripts/wallpaper.php"; ?>
-    <?php include "scripts/counter.php"; ?>
 	<link type="text/css" rel="stylesheet" href="<?= $APP->PATH ?>helpers/materialize-1.0.0/css/materialize.min.css" media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="<?= $APP->PATH ?>helpers/material-icons-1.13.6/css/material-icons.css" media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="<?= $APP->PATH ?>helpers/font-awesome-4.7.0/css/font-awesome.min.css" media="screen,projection"/>
@@ -365,5 +364,6 @@ foreach($_SESSION['wikidocs']['alerts'] as $index=>$alert){
 	unset($_SESSION['wikidocs']['alerts'][$index]);
 }
 ?>
+<script src="<?= $APP->PATH ?>scripts/linkcount.js"></script>
 </body>
 </html>
