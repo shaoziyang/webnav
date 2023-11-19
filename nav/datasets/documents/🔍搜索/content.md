@@ -4,13 +4,13 @@
 <table>
 <tbody>
 <tr>
-<td><form action="https://cn.bing.com/search" target="_blank"><input autocomplete="on" maxlength="100" size="15" name="q" type="texts" placeholder="请输入搜索关键词" /> <input type="submit" value="bing" /></form></td>
+<td><form action="https://cn.bing.com/search" target="_blank"><input autocomplete="on" maxlength="100" size="15" name="q" type="texts" placeholder="请输入搜索关键词" /> <input type="submit" class="sxyh_search" value="bing" /></form></td>
 <td>  </td>
-<td><form id="form" action="https://www.baidu.com/s" target="_blank"><input id="kw" autocomplete="on" size="15" maxlength="100" name="wd" type="texts" placeholder="请输入搜索关键词" /> <input type="submit" value="百度" /></form></td>
+<td><form id="form" action="https://www.baidu.com/s" target="_blank"><input id="kw" autocomplete="on" size="15" maxlength="100" name="wd" type="texts" placeholder="请输入搜索关键词" /> <input type="submit" class="sxyh_search" value="百度" /></form></td>
 <td>  </td>
-<td><form action="https://baike.baidu.com/search" target="_blank"><input autocomplete="on" size="13" maxlength="100" name="word" type="search1" placeholder="百科" /> <input type="submit" value="百度百科" /></form></td>
+<td><form action="https://baike.baidu.com/search" target="_blank"><input autocomplete="on" size="13" maxlength="100" name="word" type="search1" placeholder="百科" /> <input type="submit" class="sxyh_search" value="百度百科" /></form></td>
 <td>  </td>
-<td><form action="https://www.zhihu.com/search" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="q" type="search1" placeholder="百科" /> <input type="submit" value="知乎" /></form></td>
+<td><form action="https://www.zhihu.com/search" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="q" type="search1" placeholder="百科" /> <input type="submit" class="sxyh_search" value="知乎" /></form></td>
 </tr>
 </tbody>
 </table>
@@ -20,13 +20,13 @@
 <table cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td><form action="https://search.jd.com/Search" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="keyword" type="search1" placeholder="商品" /> <input type="submit" value="京东" /></form></td>
+<td><form action="https://search.jd.com/Search" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="keyword" type="search1" placeholder="商品" /> <input type="submit" class="sxyh_search" value="京东" /></form></td>
 <td>  </td>
-<td><form action="https://s.taobao.com/search" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="q" type="search1" placeholder="商品" /> <input type="submit" value="淘宝" /></form></td>
+<td><form action="https://s.taobao.com/search" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="q" type="search1" placeholder="商品" /> <input type="submit" class="sxyh_search" value="淘宝" /></form></td>
 <td>  </td>
-<td><form action="https://gwdang.com/search" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="keyword" type="s_product" placeholder="商品" /> <input type="submit" value="购物党" /></form></td>
+<td><form action="https://gwdang.com/search" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="keyword" type="s_product" placeholder="商品" /> <input type="submit" class="sxyh_search" value="购物党" /></form></td>
 <td>  </td>
-<td><form action="https://search.smzdm.com" target="_blank"><input autocomplete="on" size="9" maxlength="100" name="s" type="search1" placeholder="什么值得买" /> <input type="submit" value="什么值得买" /></form></td>
+<td><form action="https://search.smzdm.com" target="_blank"><input autocomplete="on" size="9" maxlength="100" name="s" type="search1" placeholder="什么值得买" /> <input type="submit" class="sxyh_search" value="什么值得买" /></form></td>
 </tr>
 </tbody>
 </table>
@@ -36,13 +36,13 @@
 <tbody>
 <tr>
 <td>
-<form action="https://www.alipansou.com/search" target="_blank"><input autocomplete="on" maxlength="200" name="k" type="search1" size="15" placeholder="资源名" /> <input type="submit" value="猫盘" /></form></td>
+<form action="https://www.alipansou.com/search" target="_blank"><input autocomplete="on" maxlength="200" name="k" type="search1" size="15" placeholder="资源名" /> <input type="submit" class="sxyh_search" value="猫盘" /></form></td>
 <td>  </td>
-<td><form action="https://filehippo.com/search/" target="_blank"><input autocomplete="on" size="11" maxlength="100" name="q" type="search1" placeholder="software" /> <input type="submit" value="filehippo" /></form></td>
+<td><form action="https://filehippo.com/search/" target="_blank"><input autocomplete="on" size="11" maxlength="100" name="q" type="search1" placeholder="software" /> <input type="submit" class="sxyh_search" value="filehippo" /></form></td>
 <td>  </td>
-<td><form action="https://alternativeto.net/browse/search" target="_blank"><input autocomplete="on" size="10" maxlength="100" name="q" type="search1" placeholder="软件名" /> <input type="submit" value="AlternativeTo" /></form></td>
+<td><form action="https://alternativeto.net/browse/search" target="_blank"><input autocomplete="on" size="10" maxlength="100" name="q" type="search1" placeholder="软件名" /> <input type="submit" class="sxyh_search" value="AlternativeTo" /></form></td>
 <td>  </td>
-<td><form action="https://apkpremier.com/search" target="_blank"><input autocomplete="on" size="11" maxlength="100" name="q" type="search1" placeholder="安卓" /> <input type="submit" value="APKpremier" /></form></td>
+<td><form action="https://apkpremier.com/search" target="_blank"><input autocomplete="on" size="11" maxlength="100" name="q" type="search1" placeholder="安卓" /> <input type="submit" class="sxyh_search" value="APKpremier" /></form></td>
 </tr>
 </tbody>
 </table>
@@ -51,11 +51,11 @@
 <table cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td><form class="form" action="https://search.gitee.com/?" target="_blank" method="get"><input id="search-input" class="input" size="20" autocomplete="on" name="q" type="text1" placeholder="搜索或者跳转到..." /> <input name="type" type="hidden" value="repository" /> <button class="submit">gitee</button></form></td>
+<td><form class="form" action="https://search.gitee.com/?" target="_blank" method="get"><input id="search-input" class="input" size="20" autocomplete="on" name="q" type="text1" placeholder="搜索或者跳转到..." /> <input type="submit" class="sxyh_search" value="gitee" /></form></td>
 <td>  </td>
-<td><form action="https://github.com/search" target="_blank"><input autocomplete="on" size="20" maxlength="100" name="q" type="search1" placeholder="project" /> <input type="submit" value="github" /></form></td>
+<td><form action="https://github.com/search" target="_blank"><input autocomplete="on" size="20" maxlength="100" name="q" type="search1" placeholder="project" /> <input type="submit" class="sxyh_search" value="github" /></form></td>
 <td>  </td>
-<td><form action="https://www.thefreecountry.com/search" target="_blank"><input autocomplete="on" size="20" maxlength="100" name="q" type="search1" placeholder="" /> <input type="submit" value="thefreecountry" /></form></td>
+<td><form action="https://www.thefreecountry.com/search" target="_blank"><input autocomplete="on" size="20" maxlength="100" name="q" type="search1" placeholder="" /> <input type="submit" class="sxyh_search" value="thefreecountry" /></form></td>
 </tr>
 </tbody>
 </table>
@@ -65,17 +65,16 @@
 <table cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td><form action="https://www.emojiall.com/zh-hans/search_results" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="keywords" type="search1" placeholder="emoji" /> <input type="submit" value="emoji" /></form></td>
+<td><form action="https://www.emojiall.com/zh-hans/search_results" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="keywords" type="search1" placeholder="emoji" /> <input type="submit" class="sxyh_search" value="emoji" /></form></td>
 <td>  </td>
-<td><form action="https://emojis.wiki/search" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="s" type="search1" placeholder="emoji" /> <input type="submit" value="emojis.wiki" /></form></td>
+<td><form action="https://emojis.wiki/search" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="s" type="search1" placeholder="emoji" /> <input type="submit" class="sxyh_search" value="emojis.wiki" /></form></td>
 <td>  </td>
-<td><form action="https://www.slant.co/search" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="query" type="search1" placeholder="What are the best" /> <input type="submit" value="Slant" /></form></td>
+<td><form action="https://www.slant.co/search" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="query" type="search1" placeholder="What are the best" /> <input type="submit" class="sxyh_search" value="Slant" /></form></td>
 <td>  </td>
-<td><form action="https://www.163.com/search" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="keyword" type="search1" placeholder="网易" /> <input type="submit" value="网易" /></form></td>
+<td><form action="https://www.163.com/search" target="_blank"><input autocomplete="on" size="15" maxlength="100" name="keyword" type="search1" placeholder="网易" /> <input type="submit" class="sxyh_search" value="网易" /></form></td>
 </tr>
 </tbody>
 </table>
-
 <script>
     function snow() {
         //  1、定义一片雪花模板
