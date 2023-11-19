@@ -1,4 +1,5 @@
-# 网络
+# 🌐网络
+这是一个包含了几种不同样式的简单网址模板，仅供参考。大家可以根据需要自行添加/删除网址，修改样式。<br>
 <b>新闻</b><br>
 <a class="sxyhButton_01" style="padding-right: 30px;padding-top: 2px;" target="_blank" href="https://sohu.com/"><img src="images/ico/sohu.png" height="24" style="float: left;padding-left:30px;"/>搜狐</a>
 <a class="sxyhButton_01" style="background-color:#cc0000;color:#ffffff;" target="_blank" href="https://www.163.com/">网易</a>
@@ -14,11 +15,11 @@
 <a class="sxyhButton_02" target="_blank" href="https://webmail30.189.cn" style="background-color:#5c8ecd;border:0px;">189</a>
 <a class="sxyhButton_02" target="_blank" href="https://qiye.aliyun.com/" style="background-color:#ef4542;border:0px;">阿里企业邮</a>
 <a class="sxyhButton_02" target="_blank" href="https://exmail.qq.com/login" style="background-color:#2984ef;border:0px;">QQ邮箱</a>
-<a class="sxyhButton_02" target="_blank" href="https://mail.sohu.com" style="background-color:#ffffff;color:#f80000;border:1px solid #000000;">搜狐邮箱</a>
+<a class="sxyhButton_02" target="_blank" href="https://mail.sohu.com" style="background-color:transparent;color:#f80000;border:2px solid #f0c911;">搜狐邮箱</a>
 <a class="sxyhButton_02" target="_blank" href="https://outlook.live.com/" style="background-color:#0178d4;border:0px;;">outlook</a>
 
 <b>网盘</b><br>
-<a class="sxyhButton_02" target="_blank" href="https://pan.baidu.com/" style="background-color:transparent;color:#2bc2fe;">百度网盘</a>
+<a class="sxyhButton_02" target="_blank" href="https://pan.baidu.com/" style="background-color:#ffffff;color:#2bc2fe;border:2px  solid #2bc2fe;">百度网盘</a>
 <a class="sxyhButton_02" target="_blank" href="https://www.aliyundrive.com/" style="background-color:#5770ef;">阿里云盘</a>
 <a class="sxyhButton_02" target="_blank" href="https://www.jianguoyun.com/" style="background-color:#bd7031;">坚果云</a>
 <a class="sxyhButton_02" target="_blank" href="https://www.weiyun.com/" style="background-color:#03162f;">腾讯微云</a>
@@ -55,15 +56,30 @@
 ✦ <a target="_blank" href="https://www.mydrivers.com/zhuanti/tianti/01/">手机CPU天梯图</a> 
 <a target="_blank" href="https://www.notebookcheck.net/Mobile-Processors-Benchmark-List.2436.0.html">移动CPU对比</a> 
 <a target="_blank" href="https://send-anywhere.com/">SendAnywhere</a> 
-<a target="_blank" href="https://vscode.dev/">vscode</a> <br>
+<a target="_blank" href="https://www.hupu.com/">虎扑</a> 
+<a target="_blank" href="https://www.zhihu.com/">知乎</a> 
+<a target="_blank" href="https://www.xiaohongshu.com">小红书</a> 
+<a target="_blank" href="https://bbs.kafan.cn/forum.php">卡饭</a> <br>
 ♢ <a target="_blank" href="https://kodcloud.com/">可道云</a> 
+<a target="_blank" href="https://vscode.dev/">vscode</a> 
+<a target="_blank" href="https://github.com/Zavy86/wikidocs">WikiDocs</a> 
+<a target="_blank" href="https://www.dokuwiki.org/">dokuwiki</a> 
+<a target="_blank" href="https://www.phpbb.com/">phpbb</a> 
 <a target="_blank" href="https://alist.nn.ci/zh/">AList</a> 
 <a target="_blank" href="https://os.tenfell.cn/">腾飞Webos</a> 
 <a target="_blank" href="https://www.zhenyunpan.com/">CloudDrive</a> <br>
 ✧ <a target="_blank" href="https://www.debian.org/">Debian</a> 
 <a target="_blank" href="https://ubuntu.com/">Ubuntu</a> 
 <a target="_blank" href="https://archlinux.org/">ArchLinux</a> 
-<a target="_blank" href="https://endlessos.com/">Endless OS</a> 
+<a target="_blank" href="https://www.bodhilinux.com/">Bodhi</a> 
+<a target="_blank" href="https://www.kali.org/">Kali</a> 
+<a target="_blank" href="https://manjaro.org/">Manjaro</a> 
+<a target="_blank" href="https://linuxmint.com/">Linux Mint</a> 
+<a target="_blank" href="https://www.redhat.com/">redhat</a> 
+<a target="_blank" href="https://fedoraproject.org/">Fedora</a> 
+<a target="_blank" href="https://www.deepin.org">Deepin</a> 
+<a target="_blank" href="https://zorin.com/">Zorin OS</a> 
+<a target="_blank" href="https://endlessos.com/">Endless OS</a> <br>
 
 <style>
 body {
