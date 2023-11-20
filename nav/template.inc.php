@@ -367,6 +367,7 @@ foreach($_SESSION['wikidocs']['alerts'] as $index=>$alert){
 	unset($_SESSION['wikidocs']['alerts'][$index]);
 }
 ?>
+<? echo '<script> var navurl="'.$APP->PATH.'";</script>'; ?>
 <script src="<?= $APP->PATH ?>scripts/linkcount.js"></script>
 </body>
 </html>
