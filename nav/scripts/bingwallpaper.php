@@ -50,7 +50,7 @@ if ($imgurl) {
     echo '<br><br><br>获取时间：'.date("Y-m-d H:i:s").'<br>图像日期：'.$dt.'<br>图像说明：'.$cr.'<br><br>图像链接：<a href="'.$imgurl.'">'.$imgurl.'</a><br><br>';
     
 } else {
-    exit('获取必应每日一图失败');
+    exit('获取必应每日一图失败，请刷新页面重新获取<br><br><div><a href="javascript:history.go()">刷新</a></div>');
 }
 ?>
 
