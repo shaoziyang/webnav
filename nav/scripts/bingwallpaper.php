@@ -41,14 +41,13 @@ if (preg_match("/<url>(.+?)<\/url>/", $str, $matches)) {
 }
 
 if ($imgurl) {
-    echo '<H1>必应每日一图</H1><div><a href="javascript:history.back(-1)">返回</a></div><br>';
+    echo '<H1>必应每日一图</H1>';
     $v1 = parse_url($imgurl);
     parse_str($v1['query'], $v2);
     $fn=$v2['id'];
-    echo '<div id="image-container">';
-    echo '<img id="image" width=800 title="'.$fn.'"src="'.$imgurl.'"></div>';
-    echo '<br><a href="'.$imgurl.'">'.$imgurl.'</a><br><br>日期：'.$dt.'<br>说明：'.$cr.'<br><br>';
-    
+
+    echo '<div><a href="'.$imgurl.'"><img width="800" src="'.$imgurl.'"></a><div>';
+    echo '<br><br><br>获取时间：'.date("Y-m-d H:i:s").'<br>图像日期：'.$dt.'<br>图像说明：'.$cr.'<br><br>图像链接：<a href="'.$imgurl.'">'.$imgurl.'</a><br><br>';
     
 } else {
     exit('获取必应每日一图失败');
