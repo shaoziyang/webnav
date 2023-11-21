@@ -1,18 +1,19 @@
 <?php
 
-$DT = 86400;  // 自动改变壁纸时间，默认1天，86400秒，9代表禁用
-
-$file_last = 'scripts/last.txt';
-$file_css = 'styles/wallpaper.css';
+$base_path = dirname(__DIR__);
+$file_cfg = $base_path.'/scripts/wallpaper.txt';
+$file_css = $base_path.'/styles/wallpaper.css';
+$DT = 86400;
 $time_last = 0;
 $image = '';
 
-if($DT == 0)return;
+$force = ($_GET['force']==1);
 
-if (file_exists($file_last))
+// 读取配置
+if (file_exists($file_cfg))
 {
     $c_file = array();
-    $fp = fopen($file_last, "r");
+    $fp = fopen($file_cfg, "r");
 
     if ($fp)
     {
@@ -31,11 +32,18 @@ if (file_exists($file_last))
     }
 
     if (sizeof($c_file) > 0)
-        list($time_last, $image) = explode("||", $c_file[0]);
+        list($DT, $time_last, $image) = explode("||", $c_file[0]);
 }
 
+// 禁止自动更新
+if (($DT <= 0)&&(!$force))
+    return;
 
-$image_list = array_merge(glob('images/*.png'), glob('images/*.jpg'), glob('images/*.webp'));
+
+$image_list = array_merge(glob($base_path.'/images/*.png'), glob($base_path.'/images/*.jpg'), glob($base_path.'/images/*.webp'));
+$n = strlen($base_path)+1;
+foreach($image_list as &$v)
+    $v = substr($v, $n);
 
 if (count($image_list) ==0)  // no image files
     return;
@@ -44,8 +52,7 @@ $T = time();
 $image_new = $image;
 $sav = false;
 
-
-if ((intdiv($T, $DT) > intdiv($time_last, $DT))||($image == ''))
+if ($force||($T > ($DT + $time_last))||($image == '')||(!file_exists($file_css)))
 {
     $sav = true;
     if(count($image_list)==1)
@@ -58,17 +65,16 @@ if ((intdiv($T, $DT) > intdiv($time_last, $DT))||($image == ''))
         }
 }
 
-
 if ($sav)
 {
-    $fp = fopen($file_last,"w+");
+    $fp = fopen($file_cfg,"w+");
     if ($fp)
     {
       $canWrite = false;
       while (!$canWrite)
          $canWrite = flock($fp, LOCK_EX);
 
-      fwrite($fp, $T.'||'.$image_new);
+      fwrite($fp, $DT.'||'.$T.'||'.$image_new);
       flock($fp, LOCK_UN);
       fclose($fp);
     }
@@ -89,7 +95,7 @@ if ($sav)
     }
 }
 
-$r = substr($image_new, 7);
+$r = strlen($image_new) > 7?substr($image_new, 7):'';
 echo "<script>var back_image="."'$r';</script>";
 
 ?>
