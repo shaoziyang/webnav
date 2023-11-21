@@ -1,13 +1,6 @@
-<?php
-
-$file_last = 'last.txt';
-
-
-if (file_exists($file_last))
-{
-    unlink($file_last);   
-    header('location:'.getenv("HTTP_REFERER"));
-    header("Refresh:0");
-}
-
-?>
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'scripts/wallpaper.php?force=1', true);
+xhr.send(null);
+setTimeout(function(){ history.back();}, 1);
+</script>
