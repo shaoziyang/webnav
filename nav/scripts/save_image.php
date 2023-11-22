@@ -13,12 +13,14 @@ $image_data = file_get_contents($image_url);
 
 // 将图像写入指定的目录
 if (file_put_contents($fn, $image_data) === false) {
+    echo '<h1><font color=red>保存文件失败</font></h1>';
     http_response_code(500);
 } else {
+    echo '<h1><font color=green>保存文件成功</fonr></h1>';
     http_response_code(200);
 }
 
 // 关闭窗口
-echo '<script>window.close();</script>';
+echo '<script>setTimeout(function(){ window.close();}, 1000);</script>';
 
 ?>

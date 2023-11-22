@@ -5,7 +5,7 @@
 .sxyhButton_02 {
 	background-color:#579438;
 	border-radius:4px;
-	border:2px solid #4b8f29;;
+	border:0px solid #4b8f29;;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -15,7 +15,7 @@
 	text-decoration:none;
 	text-align: center;
 	margin: 5px;
-	width: 120px; 
+	width: 200px; 
 	height: 28px;
 	line-height: 28px;
 }
@@ -54,7 +54,7 @@ if ($imgurl) {
 }
 ?>
 
-<a class="sxyhButton_02" target="_blank" style="width:200px" href="<?php echo 'save_image.php?url='.$imgurl.'&filename='.$dt.'-'.$fn; ?>">保存图像到背景图库</a>
+<button class="sxyhButton_02" onclick="window.open('<?php echo 'save_image.php?url='.$imgurl.'&filename='.$dt.'-'.$fn; ?>')">保存图像到背景图库</button>
 <br><br><br>
 <div><a href="javascript:history.back(-1)">返回</a></div>
 
