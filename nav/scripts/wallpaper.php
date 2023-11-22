@@ -54,7 +54,6 @@ $sav = false;
 
 if ($force||($T > ($DT + $time_last))||($image == '')||(!file_exists($file_css)))
 {
-    $sav = true;
     if(count($image_list)==1)
         $image_new = $image_list[0];
     else
@@ -63,10 +62,7 @@ if ($force||($T > ($DT + $time_last))||($image == '')||(!file_exists($file_css))
             $n = rand(0, count($image_list)-1);
             $image_new = $image_list[$n];
         }
-}
 
-if ($sav)
-{
     $fp = fopen($file_cfg,"w+");
     if ($fp)
     {
