@@ -43,7 +43,7 @@ if ($fp)
   while (!$canWrite)
      $canWrite = flock($fp, LOCK_EX);
 
-  fwrite($fp, $DT_NEW.'||'.$time_last.'||'.$image);
+  fwrite($fp, $DT_NEW.'||'.time().'||'.$image);
   flock($fp, LOCK_UN);
   fclose($fp);
 }
