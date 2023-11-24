@@ -54,7 +54,7 @@ if ($time_left < 0)$time_left = 0;
 echo '<a href="../">返回导航</a>&emsp;<a href="bingwallpaper.php">必应每日一图</a><br><br>';
 echo '<form action="setwallpaperinterval.php" name="formu"><p>背景自动更新时间 '.$DT.' 秒（0代表禁止自动更新）。';
 echo '下次更新时间：<span id="countdown">'.$time_left.'</span> 秒后。<br><br>';
-echo '<input type="text" name="time" value="'.$DT.'" maxlength="6" size="8" style="text-align:right;"> 秒 <input type="submit" style="border:0px;width:120px" class="sxyhButton_03" value="设置新时间" onclick="setTimeout(function(){ history.go();}, 50);" />&emsp;<a class="sxyhButton_03" style="border:0px;width:120px;background-color:#A000FF;" href="changewallpaper.php" onclick="history.go(0)">立即更新背景</a></p></form>';
+echo '<input type="text" name="time" value="'.$DT.'" maxlength="6" size="8" style="text-align:right;"> 秒 <input type="submit" style="border:0px;width:120px" class="sxyhButton_03" value="设置新时间" onclick="setTimeout(function(){ history.go();}, 50);" />&emsp;<a class="sxyhButton_03" style="border:0px;width:120px;background-color:#A000FF;" href="changewallpaper.php" onclick="history.go(0)">立即更新背景</a>&emsp;<a class="sxyhButton_03" style="border:0px;width:120px;background-color:#F06060;" href="nowallpaper.php" onclick="history.go(0)">取消背景图像</a></p></form>';
 
 // get image file list
 $image_list = array_merge(glob('../images/*.png'), glob('../images/*.jpg'), glob('../images/*.webp'));
