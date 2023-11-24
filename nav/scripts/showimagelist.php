@@ -79,6 +79,7 @@ echo $fl;
 <script>
     const t1 = new Date();
     const N = <?php echo $time_left; ?>;
+    const DT = <?php echo $DT; ?>;
     var cnt=0;
      
     setInterval(function(){
@@ -87,7 +88,7 @@ echo $fl;
         if(cnt>30)
             setTimeout(function(){ history.go();}, 50);
         
-        if (N>0){
+        if (DT>0){
             if (((t2 -t1)/1000) < N)
                 document.getElementById("countdown").innerHTML = N - parseInt((t2 - t1)/1000);
             else
