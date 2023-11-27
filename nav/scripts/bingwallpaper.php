@@ -1,33 +1,9 @@
 <html>
 <head>
 <title>必应每日一图</title>
-<style>
-.sxyhButton_02 {
-	background-color:#579438;
-	border-radius:4px;
-	border:0px solid #4b8f29;;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:宋体;
-	font-size:16px;
-	font-weight:bold;
-	text-decoration:none;
-	text-align: center;
-	margin: 5px;
-	width: 200px; 
-	height: 28px;
-	line-height: 28px;
-}
-.sxyhButton_02:hover {
-	background-color:#579438;
-}
-.sxyhButton_02:active {
-	position:relative;
-	top:1px;
-}
-
-</style>
+<link type="text/css" rel="stylesheet" href="../styles/styles-custom.css" media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="../styles/styles.css" media="screen,projection"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
 
@@ -54,7 +30,7 @@ if ($imgurl) {
 }
 ?>
 
-<button class="sxyhButton_02" onclick="window.open('<?php echo 'save_image.php?url='.$imgurl.'&filename='.$dt.'-'.$fn; ?>')">保存图像到背景图库</button>
+<button class="sxyhButton_02" style="width: 200px;" onclick="window.open('<?php echo 'save_image.php?url='.$imgurl.'&filename='.$dt.'-'.$fn; ?>')">保存图像到背景图库</button>
 <br><br><br>
 <div><a href="javascript:history.back(-1)">返回</a></div>
 

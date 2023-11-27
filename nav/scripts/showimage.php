@@ -2,6 +2,8 @@
 <head>
 <title>随心远航系统背景图</title>
 <link type="text/css" rel="stylesheet" href="../styles/styles-custom.css" media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="../styles/styles.css" media="screen,projection"/>
+<meta name="viewport" content="width=device-width"/>
 </head>
 <body>
 <?php

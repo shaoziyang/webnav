@@ -1,7 +1,9 @@
 <html>
 <head>
 <title>随心远航背景图库</title>
-<link type="text/css" rel="stylesheet" href="../styles/styles-custom.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../styles/styles-custom.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../styles/wallpaper.css" media="screen,projection"/>
+	<meta name="viewport" content="width=device-width"/>
 <style>
   #countdown {
       font-weight:bold;
@@ -65,12 +67,12 @@ foreach($image_list as $v){
     $fn = substr($v,10);
     $bl = ($fn==$image)?'border="8" style="border-style:double;"':'border="0"';
     $al = ($fn==$image)?'style="color:#A000FF;font-weight:"':'';
-    $fl = $fl.'<a class="sxyhButton_img" '.$al.' href="showimage.php?file='.$fn.'"><img width="280" '.$bl.' src=../images/'.$v.'>'.$n.' - [ '.$fn.' ]</a>'.PHP_EOL;
+    $fl = $fl.'<a class="sxyhButton_img" '.$al.' href="showimage.php?file='.$fn.'">'.$n.' - [ '.$fn.' ]<img width="280" '.$bl.' src=../images/'.$v.'></a>'.PHP_EOL;
     $n++;
 }
 
 $fl = $fl.'<br><br><a href="../">返回导航</a>';
-$fl = $fl.'<style> .sxyhButton_img {background-color:transparent;border-radius:0px;border:0px solid  #transparent;display:inline-block;cursor:pointer;font-family:宋体;font-size:12px;text-decoration:none;margin:10px;width:280px; height:28px;line-height:28px;}</style>';
+$fl = $fl.'<style> .sxyhButton_img {background-color:transparent;border-radius:0px;border:0px solid  #transparent;display:inline-block;cursor:pointer;font-family:宋体;font-size:12px;text-decoration:none;margin:10px;width:280px; height:auto;line-height:28px;}</style>';
 
 echo $fl;
 
