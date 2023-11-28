@@ -65,9 +65,9 @@ $fl = '一共有'.count($image_list).'个图形文件。当前背景文件：<fo
 $n = 1;
 foreach($image_list as $v){
     $fn = substr($v,10);
-    $bl = ($fn==$image)?'border="8" style="border-style:double;"':'border="8" style="border-color:rgb(230,158,41); border-style:ridge;"';
+    $bl = ($fn==$image)?'#A000FF':'#e5a032';
     $al = ($fn==$image)?'style="color:#A000FF;font-weight:"':'';
-    $fl = $fl.'<a class="sxyhButton_img" '.$al.' href="showimage.php?file='.$fn.'"><img width="280" '.$bl.' src=../images/'.$v.'>'.$n.' - [ '.$fn.' ]</a>'.PHP_EOL;
+    $fl = $fl.'<a class="sxyhButton_img" '.$al.' href="showimage.php?file='.$fn.'"><img width="280" border="8" style="border-color:'.$bl.'; border-style:ridge;" src=../images/'.$v.'>'.$n.' - [ '.$fn.' ]</a>'.PHP_EOL;
     $n++;
 }
 
