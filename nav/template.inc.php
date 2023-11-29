@@ -38,10 +38,10 @@
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=<?= GTAG ?>"></script>
 		<script>
-      window.dataLayer=window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js',new Date());
-      gtag('config','<?= GTAG ?>');
+	  window.dataLayer=window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js',new Date());
+	  gtag('config','<?= GTAG ?>');
 		</script>
 	<?php endif; ?>
 </head>
@@ -113,8 +113,8 @@
 				<a class="btn btn-floating btn-small tooltipped waves-effect waves-light sidenav-trigger main-color" href="#" data-target="nav-mobile" data-position="bottom" data-tooltip="<?= $TXT->TooltipSidebar ?>"><i class="material-icons">menu</i></a>
 			</div><!-- /col -->
 			<div class="col s8 m7 l8 offset-l1 center-on-small-only" style="padding-top:3px">
-      <span>
-        <?php
+	  <span>
+		<?php
 				if($DOC->ID=="homepage"){
 					echo $APP->TITLE;
 				}else{
@@ -128,13 +128,13 @@
 					}
 				}
 				?>
-      </span>
+	  </span>
 			</div><!-- /col -->
 			<div class="col s2 m2 l2">
 				<?php if(MODE=="view"): ?>
 					<span class="right nowrap">
-            <a class="btn btn-floating btn-small tooltipped waves-effect waves-light main-color" href="<?= $DOC->URL."?print" ?>" target="_blank" data-position="bottom" data-tooltip="<?= $TXT->TooltipPrint ?>"><i class="material-icons">print</i></a>
-            <?php if(Session::getInstance()->autenticationLevel()==2): ?>
+			<a class="btn btn-floating btn-small tooltipped waves-effect waves-light main-color" href="<?= $DOC->URL."?print" ?>" target="_blank" data-position="bottom" data-tooltip="<?= $TXT->TooltipPrint ?>"><i class="material-icons">print</i></a>
+			<?php if(Session::getInstance()->autenticationLevel()==2): ?>
 							<a class="btn btn-floating btn-small tooltipped waves-effect waves-light main-color" href="<?= $APP->PATH ?>settings.php" data-position="bottom" data-tooltip="<?= $TXT->TooltipSettings ?>"><i class="material-icons">settings</i></a>
 							<a class="btn btn-floating btn-small tooltipped waves-effect waves-light main-color" href="#" data-position="bottom" data-tooltip="<?= $TXT->TooltipNewDocument ?>" onClick="new_document();"><i class="material-icons">add_circle</i></a>
 							<a class="btn btn-floating btn-small tooltipped waves-effect waves-light main-color" href="<?= $DOC->URL."?edit" ?>" data-position="bottom" data-tooltip="<?= $TXT->TooltipEditDocument ?>"><i class="material-icons">border_color</i></a>
@@ -142,18 +142,18 @@
 						<?php else: ?>
 							<a class="btn btn-floating btn-small tooltipped waves-effect waves-light main-color" href="<?= $DOC->URL."?auth" ?>" data-position="bottom" data-tooltip="<?= $TXT->TooltipSignIn ?>"><i class="material-icons">lock_open</i></a>
 						<?php endif; ?>
-          </span>
+		  </span>
 				<?php endif; ?>
 				<?php if(MODE=="edit"): ?>
 					<span class="right nowrap">
-            <a class="btn btn-floating btn-small tooltipped waves-effect waves-light grey" href="<?= $DOC->URL ?>" data-position="bottom" data-tooltip="<?= $TXT->TooltipCancelEditing ?>"><i class="material-icons">cancel</i></a>
-            <a class="btn btn-floating btn-small tooltipped waves-effect waves-light blue modal-trigger" href="#modal_image_uploader" data-position="bottom" data-tooltip="<?= $TXT->TooltipImages ?>"><i class="material-icons">image</i></a>
-            <a class="btn btn-floating btn-small tooltipped waves-effect waves-light purple modal-trigger" href="#modal_attachment_uploader" data-position="bottom" data-tooltip="<?= $TXT->Attachments ?>"><i class="material-icons">attachment</i></a>
-            <a class="btn btn-floating btn-small tooltipped waves-effect waves-light red" href="<?= $APP->PATH ?>submit.php?act=content_delete&document=<?= $DOC->ID ?>" data-position="bottom" data-tooltip="<?= $TXT->TooltipDeleteDocument ?>" onClick="return(confirm('<?= str_replace(["'",'"'],"\'",$TXT->TooltipDeleteDocumentConfirm) ?>'))"><i class="material-icons">delete</i></a>
-            <a class="btn btn-floating btn-small tooltipped waves-effect waves-light orange modal-trigger" href="#modal_versions" data-position="bottom" data-tooltip="<?= $TXT->TooltipVersions ?>"><i class="material-icons">history</i></a>
-            <button id="editor-revision" class="btn btn-floating btn-small tooltipped waves-effect waves-light amber" data-position="bottom" data-tooltip="<?= $TXT->TooltipVersioning ?>"><i id="editor-revision-checkbox" class="material-icons">check_box</i></button>
-            <button id="editor-save" class="btn btn-floating btn-small tooltipped waves-effect waves-light green" data-position="bottom" data-tooltip="<?= $TXT->TooltipSave ?>"><i class="material-icons">save</i></button>
-          </span>
+			<a class="btn btn-floating btn-small tooltipped waves-effect waves-light grey" href="<?= $DOC->URL ?>" data-position="bottom" data-tooltip="<?= $TXT->TooltipCancelEditing ?>"><i class="material-icons">cancel</i></a>
+			<a class="btn btn-floating btn-small tooltipped waves-effect waves-light blue modal-trigger" href="#modal_image_uploader" data-position="bottom" data-tooltip="<?= $TXT->TooltipImages ?>"><i class="material-icons">image</i></a>
+			<a class="btn btn-floating btn-small tooltipped waves-effect waves-light purple modal-trigger" href="#modal_attachment_uploader" data-position="bottom" data-tooltip="<?= $TXT->Attachments ?>"><i class="material-icons">attachment</i></a>
+			<a class="btn btn-floating btn-small tooltipped waves-effect waves-light red" href="<?= $APP->PATH ?>submit.php?act=content_delete&document=<?= $DOC->ID ?>" data-position="bottom" data-tooltip="<?= $TXT->TooltipDeleteDocument ?>" onClick="return(confirm('<?= str_replace(["'",'"'],"\'",$TXT->TooltipDeleteDocumentConfirm) ?>'))"><i class="material-icons">delete</i></a>
+			<a class="btn btn-floating btn-small tooltipped waves-effect waves-light orange modal-trigger" href="#modal_versions" data-position="bottom" data-tooltip="<?= $TXT->TooltipVersions ?>"><i class="material-icons">history</i></a>
+			<button id="editor-revision" class="btn btn-floating btn-small tooltipped waves-effect waves-light amber" data-position="bottom" data-tooltip="<?= $TXT->TooltipVersioning ?>"><i id="editor-revision-checkbox" class="material-icons">check_box</i></button>
+			<button id="editor-save" class="btn btn-floating btn-small tooltipped waves-effect waves-light green" data-position="bottom" data-tooltip="<?= $TXT->TooltipSave ?>"><i class="material-icons">save</i></button>
+		  </span>
 				<?php endif; ?>
 			</div><!-- /col -->
 		</div><!-- /row -->
@@ -230,13 +230,13 @@
 								<?php foreach($DOC->images() as $image): ?>
 									<div class="col s6 m3">
 										<a href="#" class="image-picker waves-effect waves-light" image="<?= $image ?>"><img class="polaroid" src="<?= $DOC->PATH."/".$image ?>"/></a>
-                    <a href="#" class="image-delete" image="<?= $image ?>" style="display: block; text-align: center"><span class="fa fa-trash-o" aria-hidden="true"></span> &nbsp; <?= $TXT->ImageDeleteText ?></a>
+					<a href="#" class="image-delete" image="<?= $image ?>" style="display: block; text-align: center"><span class="fa fa-trash-o" aria-hidden="true"></span> &nbsp; <?= $TXT->ImageDeleteText ?></a>
 									</div><!-- /col -->
 								<?php endforeach; ?>
 							</div><!-- /row -->
-              <div class="row" id="images-info">
-                <i><small>* <?= $TXT->FilesDeleteInfoText ?></small></i>
-              </div>
+			  <div class="row" id="images-info">
+				<i><small>* <?= $TXT->FilesDeleteInfoText ?></small></i>
+			  </div>
 						</div><!-- /modal-content-->
 					</div><!-- /modal_image_uploader -->
 					<!-- modal_attachment_uploader -->
@@ -265,9 +265,9 @@
 									<li>- <?= $attachment->label ?> &nbsp; <a href="#" class="attachment-delete tooltipped" attachment="<?= $attachment->label ?>" data-position="top" data-tooltip="<?= $TXT->AttachmentsDelete ?>"><span class="fa fa-trash-o" aria-hidden="true"></span></a></li>
 								<?php endforeach; ?>
 							</ul><!-- /row -->
-              <div class="row" id="attachments-info">
-                <i><small>* <?= $TXT->FilesDeleteInfoText ?></small></i>
-              </div>
+			  <div class="row" id="attachments-info">
+				<i><small>* <?= $TXT->FilesDeleteInfoText ?></small></i>
+			  </div>
 						</div><!-- /modal-content-->
 					</div><!-- /modal_attachment_uploader -->
 					<!-- modal_version_uploader -->
@@ -345,11 +345,11 @@
 <?php endif; ?>
 <script>
   function new_document(){
-    var new_path=prompt("<?= str_replace(["'",'"'],"\'",$TXT->PromptNewDocument) ?>",DOC.ID+"/");
-    if(new_path!==DOC.ID+"/"){
-      new_path=new_path.replace(" ","-").toLowerCase()+"?edit";
-      window.location.href=APP.URL+new_path;
-    }
+	var new_path=prompt("<?= str_replace(["'",'"'],"\'",$TXT->PromptNewDocument) ?>",DOC.ID+"/");
+	if(new_path!==DOC.ID+"/"){
+	  new_path=new_path.replace(" ","-").toLowerCase()+"?edit";
+	  window.location.href=APP.URL+new_path;
+	}
   }
 </script>
 <?php
@@ -363,7 +363,7 @@ foreach($_SESSION['wikidocs']['alerts'] as $index=>$alert){
 		case "info":$class="blue";break;
 	}
 	// show alert
-	echo "  <script>M.toast({html:\"".$alert->message."\",classes:\"".$class."\"});</script>\n";
+	echo "	<script>M.toast({html:\"".$alert->message."\",classes:\"".$class."\"});</script>\n";
 	// remove from session
 	unset($_SESSION['wikidocs']['alerts'][$index]);
 }
