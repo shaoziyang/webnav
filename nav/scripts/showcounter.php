@@ -91,6 +91,6 @@ if (file_exists($counter_filename)) {
 ?>
 
 <?php
-$result = '<b>访问统计</b> 今天 <b><font color="#0080FF">'.$day.'</font></b>	&nbsp昨天 <b><font color="#A04020">'.$yesterday.'</font></b> &nbsp本周 <b><font color="#12CC22">'.$week.'</font></b> &nbsp本月 <b><font color="#CF8C52">'.$month.'</font></b> &nbsp今年 <b><font color="#801010">'.$year.'</font></b> &nbsp总共 <b><font color="#002288">'.$all.'</font></b>';
+$result = '<b>导航统计</b> 今天 <b><font color="#0080FF">'.$day.'</font></b>	&nbsp昨天 <b><font color="#A04020">'.$yesterday.'</font></b> &nbsp本周 <b><font color="#12CC22">'.$week.'</font></b> &nbsp本月 <b><font color="#CF8C52">'.$month.'</font></b> &nbsp今年 <b><font color="#801010">'.$year.'</font></b> &nbsp总共 <b><font color="#002288">'.$all.'</font></b>';
 echo $result;
 ?>
