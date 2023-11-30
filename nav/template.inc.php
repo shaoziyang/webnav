@@ -304,12 +304,12 @@
 				<p class="left-align"><small><?php include 'scripts/showcounter.php'; ?></small></p>
 			</div><!-- /col -->
 			<div class="col m5 hide-on-med-and-down">
-				<p class="right-align"><small><a href="<?= $APP->PATH ?>scripts/showimagelist.php" title="显示系统背景图库">背景图库</a>&emsp;<a href="https://github.com/shaoziyang/webnav" target="_blank"><b>⛵随心远航</b>网址导航</a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
+				<p class="right-align"><small><a href="<?= $APP->PATH ?>scripts/showimagelist.php" title="显示系统背景图库">背景图库</a>&emsp;<a href="https://github.com/shaoziyang/webnav" title="v1.0.0" target="_blank"><b>⛵随心远航</b>网址导航</a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
 			</div><!-- /col -->
 			<div class="col s12 hide-on-large-only">
 				<p class="center-align"><small><?php include 'scripts/showcounter.php'; ?><br><a href="<?= $APP->PATH ?>scripts/showimagelist.php" title="显示系统背景图库">背景图库</a></small></p>
 				<p class="center-align"><small><b><?= $APP->OWNER ?></b><br><?= $APP->NOTICE ?></small></p>
-				<p class="center-align"><small><a href="https://github.com/shaoziyang/webnav" target="_blank"><b>⛵随心远航</b>网址导航</a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
+				<p class="center-align"><small><a href="https://github.com/shaoziyang/webnav" title="v1.0.0" target="_blank"><b>⛵随心远航</b>网址导航</a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
 			</div><!-- /col -->
 		</div><!-- /row -->
 		<?php if($APP->DEBUG): ?>
