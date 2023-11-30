@@ -24,9 +24,14 @@
 	echo '<a href="'.$url.$fn.'"><img width="800" src="'.$url.$fn.'"></a><br><br>';
 
 	list($width, $height, $type, $attr) = getimagesize($base_path.$fn);
-	echo '文件名：'.$fn.'<br><br>';
-	echo '大小：'.$width.' x '.$height.'<br><br>';
-	echo '</div>';
+	
+	echo '<table align="center" cellpadding="0" cellspacing="8">';
+	echo '<tr><td>文件名</td><td width=24px></td><td>'.$fn.'</td></tr>';
+	echo '<tr><td>创建时间</td><td></td><td>'.date("Y 年 m 月 d 日 H 时 i 分 s 秒",filectime($base_path.$fn)).'</td></tr>';
+	echo '<tr><td>分辨率</td><td></td><td>'.$width.' x '.$height.'</td></tr>';
+	echo '<tr><td>大小</td><td></td><td>'.filesize($base_path.$fn).'</td></tr>';
+	echo '</table>';
+	echo '</div><br>';
 
 	?>
 	<div class="sxyhText_01">
