@@ -38,10 +38,10 @@
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=<?= GTAG ?>"></script>
 		<script>
-	  window.dataLayer=window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js',new Date());
-	  gtag('config','<?= GTAG ?>');
+			window.dataLayer=window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js',new Date());
+			gtag('config','<?= GTAG ?>');
 		</script>
 	<?php endif; ?>
 </head>
@@ -113,7 +113,7 @@
 				<a class="btn btn-floating btn-small tooltipped waves-effect waves-light sidenav-trigger main-color" href="#" data-target="nav-mobile" data-position="bottom" data-tooltip="<?= $TXT->TooltipSidebar ?>"><i class="material-icons">menu</i></a>
 			</div><!-- /col -->
 			<div class="col s8 m7 l8 offset-l1 center-on-small-only" style="padding-top:3px">
-	  <span>
+		<span>
 		<?php
 				if($DOC->ID=="homepage"){
 					echo $APP->TITLE;
@@ -128,7 +128,7 @@
 					}
 				}
 				?>
-	  </span>
+		</span>
 			</div><!-- /col -->
 			<div class="col s2 m2 l2">
 				<?php if(MODE=="view"): ?>
@@ -301,15 +301,15 @@
 		<div class="divider"></div>
 		<div class="row">
 			<div class="col m5 offset-m1 hide-on-med-and-down">
-				<p class="left-align"><small><?php include 'scripts/showcounter.php'; ?></small></p>
+				<p class="left-align" title='<?= $TXT->LastUpdate ?> <?= wdf_timestamp_format($DOC->TIMESTAMP,"Y-m-d H:i") ?>'><small><?php include 'scripts/showcounter.php'; ?></small></p>
 			</div><!-- /col -->
 			<div class="col m5 hide-on-med-and-down">
-				<p class="right-align"><small><a href="<?= $APP->PATH ?>scripts/showimagelist.php" title="显示系统背景图库">背景图库</a>&emsp;<a href="https://github.com/shaoziyang/webnav" title="v1.0.0" target="_blank"><b>⛵随心远航</b>网址导航</a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
+				<p class="right-align"><small><a href="<?= $APP->PATH ?>scripts/showimagelist.php" title="显示系统背景图库">🖼️</a>&emsp;<a href="https://github.com/shaoziyang/webnav" title="随心远航网址导航 v1.0.0" target="_blank"><b>⛵¹ </b></a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
 			</div><!-- /col -->
 			<div class="col s12 hide-on-large-only">
-				<p class="center-align"><small><?php include 'scripts/showcounter.php'; ?><br><a href="<?= $APP->PATH ?>scripts/showimagelist.php" title="显示系统背景图库">背景图库</a></small></p>
+				<p class="center-align" title='<?= $TXT->LastUpdate ?> <?= wdf_timestamp_format($DOC->TIMESTAMP,"Y-m-d H:i") ?>'><small><?php include 'scripts/showcounter.php'; ?></small></p>
 				<p class="center-align"><small><b><?= $APP->OWNER ?></b><br><?= $APP->NOTICE ?></small></p>
-				<p class="center-align"><small><a href="https://github.com/shaoziyang/webnav" title="v1.0.0" target="_blank"><b>⛵随心远航</b>网址导航</a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
+				<p class="center-align"><small><a href="<?= $APP->PATH ?>scripts/showimagelist.php" title="显示系统背景图库">🖼️</a>&emsp;<a href="https://github.com/shaoziyang/webnav" title="随心远航网址导航 v1.0.0" target="_blank"><b>⛵¹ </b></a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
 			</div><!-- /col -->
 		</div><!-- /row -->
 		<?php if($APP->DEBUG): ?>
