@@ -27,6 +27,7 @@
 	<link type="text/css" rel="stylesheet" href="<?= $APP->PATH ?>helpers/katex-0.16.7/css/katex.min.css" media="screen,projection">
 	<link type="text/css" rel="stylesheet" href="<?= $APP->PATH ?>styles/styles.css" media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="<?= $APP->PATH ?>styles/styles-<?= ($APP->DARK?"dark":"light") ?>.css" media="screen,projection"/>
+	<?php if(file_exists($APP->DIR."scripts/custom.php")) include $APP->DIR."scripts/custom.php"; ?>
 	<?php if(file_exists($APP->DIR."styles/wallpaper.css")): ?><link type="text/css" rel="stylesheet" href="<?= $APP->PATH ?>styles/wallpaper.css" media="screen,projection"/><?php echo "\n"; endif; ?>
 	<?php if(file_exists($APP->DIR."styles/styles-custom.css")): ?><link type="text/css" rel="stylesheet" href="<?= $APP->PATH ?>styles/styles-custom.css" media="screen,projection"/><?php echo "\n"; endif; ?>
 	<link type="image/ico" rel="icon" href="<?= $APP->PATH ?>favicon.ico" sizes="any"/>
