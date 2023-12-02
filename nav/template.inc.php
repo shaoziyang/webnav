@@ -355,7 +355,7 @@
 </script>
 <?php
 // cycle all alerts
-foreach($_SESSION['wikidocs']['alerts'] as $index=>$alert){
+foreach($_SESSION['sxyh']['alerts'] as $index=>$alert){
 	// swicth class
 	switch($alert->class){
 		case "success":$class="green";break;
@@ -366,7 +366,7 @@ foreach($_SESSION['wikidocs']['alerts'] as $index=>$alert){
 	// show alert
 	echo "	<script>M.toast({html:\"".$alert->message."\",classes:\"".$class."\"});</script>\n";
 	// remove from session
-	unset($_SESSION['wikidocs']['alerts'][$index]);
+	unset($_SESSION['sxyh']['alerts'][$index]);
 }
 ?>
 <script src="<?= $APP->PATH ?>scripts/linkcount.js"></script>

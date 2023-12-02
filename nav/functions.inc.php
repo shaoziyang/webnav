@@ -52,7 +52,7 @@ function wdf_alert(string $message,string $class="info"):bool{
 	// check for debug
 	if(!DEBUG){
 		// add alert to session alerts
-		$_SESSION['wikidocs']['alerts'][]=$alert;
+		$_SESSION['sxyh']['alerts'][]=$alert;
 	}else{
 		// swicth class
 		switch($class){

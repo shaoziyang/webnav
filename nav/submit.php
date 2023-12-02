@@ -43,14 +43,14 @@ function authentication(){
 	// debug
 	wdf_dump($_REQUEST,"_REQUEST");
 	// reset authentication
-	$_SESSION['wikidocs']['authenticated']=0;
+	$_SESSION['sxyh']['authenticated']=0;
 	// acquire variables
 	$p_document=strtolower($_POST['document']);
 	$p_password=$_POST['password'];
 	// check edit code
 	if(md5($p_password)===EDITCODE){
 		// update session
-		$_SESSION['wikidocs']['authenticated']=2;
+		$_SESSION['sxyh']['authenticated']=2;
 		// alert and redirect
 		wdf_alert($TXT->SubmitAuthSuccess,"success");
 		wdf_redirect(PATH.$p_document);
@@ -58,13 +58,13 @@ function authentication(){
 	// check view code
 	if(md5($p_password)===VIEWCODE){
 		// update session
-		$_SESSION['wikidocs']['authenticated']=1;
+		$_SESSION['sxyh']['authenticated']=1;
 		// alert and redirect
 		wdf_alert($TXT->SubmitAuthSuccess,"success");
 		wdf_redirect(PATH.$p_document);
 	}
 	// authenticatiojn error
-	if($_SESSION['wikidocs']['authenticated']==0){
+	if($_SESSION['sxyh']['authenticated']==0){
 		// alert and redirect
 		wdf_alert($TXT->SubmitAuthInvalid,"danger");
 		wdf_redirect(PATH.$p_document);
