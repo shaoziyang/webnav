@@ -17,7 +17,7 @@
 	<meta http-equiv="pragma" content="no-store" />
 	<meta http-equiv="content-type" content="no-store, must-revalidate" />
 	<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT"/>
-	<?php echo '<script> var navurl="'.$APP->PATH.'";</script>'; ?>
+	<?php $VER_SXYH='v1.0.20'; echo '<script> var navurl="'.$APP->PATH.'";</script>'; ?>
 	<?php include "scripts/wallpaper.php"; ?>
 	<link type="text/css" rel="stylesheet" href="<?= $APP->PATH ?>helpers/materialize-1.0.0/css/materialize.min.css" media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="<?= $APP->PATH ?>helpers/material-icons-1.13.6/css/material-icons.css" media="screen,projection"/>
@@ -305,13 +305,13 @@
 				<p class="left-align" title='<?= $TXT->LastUpdate ?> <?= wdf_timestamp_format($DOC->TIMESTAMP,"Y-m-d H:i") ?>'><small><?php include 'scripts/showcounter.php'; ?></small></p>
 			</div><!-- /col -->
 			<div class="col m5 hide-on-med-and-down">
-				<p class="right-align"><small><a href="<?= $APP->PATH ?>scripts/showimagelist.php" title="显示系统背景图库">🖼️</a>&emsp;<a href="#" title="随心远航网址导航 v1.0.0" class="about-link"><b>⛵¹ </b></a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
+				<p class="right-align"><small><a href="<?= $APP->PATH ?>scripts/showimagelist.php" title="显示系统背景图库">🖼️</a>&emsp;<a href="#" title="随心远航网址导航 <?php echo $VER_SXYH; ?>" class="about-link"><b>⛵¹ </b></a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
 
 			</div><!-- /col -->
 			<div class="col s12 hide-on-large-only">
 				<p class="center-align" title='<?= $TXT->LastUpdate ?> <?= wdf_timestamp_format($DOC->TIMESTAMP,"Y-m-d H:i") ?>'><small><?php include 'scripts/showcounter.php'; ?></small></p>
 				<p class="center-align"><small><b><?= $APP->OWNER ?></b><br><?= $APP->NOTICE ?></small></p>
-				<p class="center-align"><small><a href="<?= $APP->PATH ?>scripts/showimagelist.php" title="显示系统背景图库">🖼️</a>&emsp;<a href="#" title="随心远航网址导航 v1.0.0" class="about-link"><b>⛵¹ </b></a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
+				<p class="center-align"><small><a href="<?= $APP->PATH ?>scripts/showimagelist.php" title="显示系统背景图库">🖼️</a>&emsp;<a href="#" title="随心远航网址导航 <?php echo $VER_SXYH; ?>" class="about-link"><b>⛵¹ </b></a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
 			</div><!-- /col -->
 		</div><!-- /row -->
 		<?php if($APP->DEBUG): ?>
@@ -324,8 +324,8 @@
 		<?php endif; ?>
 		<div id="about-dialog" class="about-dialog">
 			<span class="close-button" onclick="hideAboutDialog()">&times;</span>
-			<p><span style="font-size:30px;"><b>随心远航网址导航</b></span>&emsp;v1.0<br>运行于 <a href="<?= $APP->PATH ?>"><?php echo $_SERVER['HTTP_HOST']; ?></a></p>
-			<p><img src="<?= $APP->PATH ?>logo.png" align="left" class="logo-image"> 可以 DIY 的开源网址导航系统, 支持 markdown, 小巧快速, 无需数据库<br></p>       
+			<p><span style="font-size:30px;"><b>随心远航网址导航</b></span>&emsp;<?php echo $VER_SXYH; ?><br>运行于 <a href="<?= $APP->PATH ?>"><?php echo $_SERVER['HTTP_HOST']; ?></a></p>
+			<p><img src="<?= $APP->PATH ?>logo.png" align="left" class="logo-image"> 可以 DIY 的开源网址导航系统, 支持 markdown, 小巧快速, 无需数据库<br></p>
 			<p><b>网址</b>&emsp;&emsp;<a href="https://gitee.com/shaoziyang/webnav" target="_blank">gitee</a>&emsp;&emsp;<a href="https://github.com/shaoziyang/webnav">github</a><br>
 <b>帮助</b>&emsp;&emsp;<a href="https://gitee.com/shaoziyang/webnav/wikis" target="_blank">gitee</a>&emsp;&emsp;<a href="https://github.com/shaoziyang/webnav/wiki" target="_blank">github</a></p>
 		</div><!-- about-dialog -->
@@ -355,7 +355,7 @@
 			randomY = rnd(randomY, 1, 5, 0);
 			image.style.transform = 'rotate(' + randomA + 'deg) translate(' + randomX + 'px,'+randomY+ 'px)';
 			if (isanimation)
-				setTimeout(animationImage, Math.floor(Math.random() * 500)+100);
+				setTimeout(animationImage, Math.floor(Math.random() * 200)+100);
 		}        
 		</script>
 	</div><!-- /container -->
