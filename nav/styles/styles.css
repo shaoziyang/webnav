@@ -162,3 +162,7 @@ pre.debug{margin:9px;font-size:12px;}
 	margin-top: -20px;
 	margin-right: -12px;
 }
+.logo-image {
+	position: relative;
+	transition: transform 0.4s; /* 添加过渡效果 */
+}

@@ -324,21 +324,39 @@
 		<?php endif; ?>
 		<div id="about-dialog" class="about-dialog">
 			<span class="close-button" onclick="hideAboutDialog()">&times;</span>
-			<p><span style="font-size:30px;"><b>随心远航网址导航</b></span>&emsp;v1.0</p>
-			<p><img src="<?= $APP->PATH ?>logo.png" align="left"> 可以 DIY 的开源网址导航系统, 支持 markdown, 小巧快速无需数据库<br></p>       
+			<p><span style="font-size:30px;"><b>随心远航网址导航</b></span>&emsp;v1.0<br>运行于 <a href="<?= $APP->PATH ?>"><?php echo $_SERVER['HTTP_HOST']; ?></a></p>
+			<p><img src="<?= $APP->PATH ?>logo.png" align="left" class="logo-image"> 可以 DIY 的开源网址导航系统, 支持 markdown, 小巧快速, 无需数据库<br></p>       
 			<p><b>网址</b>&emsp;&emsp;<a href="https://gitee.com/shaoziyang/webnav" target="_blank">gitee</a>&emsp;&emsp;<a href="https://github.com/shaoziyang/webnav">github</a><br>
 <b>帮助</b>&emsp;&emsp;<a href="https://gitee.com/shaoziyang/webnav/wikis" target="_blank">gitee</a>&emsp;&emsp;<a href="https://github.com/shaoziyang/webnav/wiki" target="_blank">github</a></p>
 		</div><!-- about-dialog -->
 		<script>
+		let isanimation = false;
+		let randomA = 0;
+		let randomX = 0;
+		let randomY = 0;
+		const image = document.querySelector('.logo-image');
 		var alink = document.getElementsByClassName('about-link');
 		for (var i = 0; i < alink.length; i++) {
 			alink[i].addEventListener('click', function(e) {
-				e.preventDefault();	document.querySelector('.about-dialog').style.display = 'block';
+				e.preventDefault();	document.querySelector('.about-dialog').style.display = 'block';isanimation = true;setTimeout(animationImage, 200);
             })
 		}
 		function hideAboutDialog() {
 			document.getElementById("about-dialog").style.display = "none";
+			isanimation = false;
 		}
+		function rnd(d, dt, max, min){
+			d += Math.floor(Math.random() * dt * 2) - dt;
+			return Math.max(min, Math.min(d, max));
+		}
+		function animationImage() {
+			randomA = rnd(randomA, 8, 30, -30);
+			randomX = rnd(randomX, 6, 5, -30);
+			randomY = rnd(randomY, 1, 5, 0);
+			image.style.transform = 'rotate(' + randomA + 'deg) translate(' + randomX + 'px,'+randomY+ 'px)';
+			if (isanimation)
+				setTimeout(animationImage, Math.floor(Math.random() * 500)+100);
+		}        
 		</script>
 	</div><!-- /container -->
 </main>
