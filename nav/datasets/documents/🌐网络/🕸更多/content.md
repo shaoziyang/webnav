@@ -1,6 +1,6 @@
 # 🕸更多
 
-<a target="_blank" href="http://www.quzaobao.com/">联合早报</a> 
+📰<a target="_blank" href="http://www.quzaobao.com/">联合早报</a> 
 <a target="_blank" href="https://news.ifeng.com/">凤凰网</a> 
 <a target="_blank" href="https://www.toutiao.com/">今日头条</a> 
 <a target="_blank" href="https://news.qq.com/">腾讯网</a> 
@@ -20,7 +20,7 @@
 <a target="_blank" href="https://sspai.com/">少数派</a> 
 <a target="_blank" href="http://www.cn-beta.com/">cnbeta</a> 
 
-<a target="_blank" href="https://stackoverflow.com/">Stack Overflow</a> 
+👨‍💻<a target="_blank" href="https://stackoverflow.com/">Stack Overflow</a> 
 <a target="_blank" href="https://www.runoob.com/">菜鸟教程</a> 
 <a target="_blank" href="https://www.w3cschool.cn/">W3Cschool</a> 
 <a target="_blank" href="https://anycodes.cn/">Anycodes</a> 
@@ -32,8 +32,7 @@
 <a target="_blank" href="https://www.codecademy.com/">Codecademy_</a> 
 <a target="_blank" href="https://www.codeproject.com/">CodeProject</a> 
 
-<a target="_blank" href="https://portapps.io/">Portapps</a> 
-<a target="_blank" href="http://portableapps.com/">Portable Apps</a> 
+💾<a target="_blank" href="https://portapps.io/">Portapps</a> 
 <a target="_blank" href="http://www.portablefreeware.com/" Title="The Portable Freeware Collection">Freeware</a> 
 <a target="_blank" href="https://download.cnet.com/">CNET</a> 
 <a target="_blank" href="https://filehippo.com/">FileHippo</a> 
@@ -42,16 +41,18 @@
 <a target="_blank" href="https://www.pcmag.com/picks/best-free-software">PCMag</a> 
 <a target="_blank" href="https://www.snapfiles.com/">SnapFiles</a> 
 <a target="_blank" href="https://ninite.com/">Ninite</a> 
-<a target="_blank" href="https://sourceforge.net/">SourceForge</a> <br>
-<a target="_blank" href="https://www.onlinedown.net/">华军软件园</a> 
-<a target="_blank" href="https://www.zol.com.cn/">中关村在线</a> 
-<a target="_blank" href="https://pc.qq.com/">腾讯软件</a> 
-<a target="_blank" href="https://baoku.360.cn/">360软件库</a> 
-<a target="_blank" href="https://www.xdowns.com/">绿盟</a> 
-<a target="_blank" href="https://www.ghxi.com/">果核剥壳</a> 
-<a target="_blank" href="https://www.appinn.com/">小众软件</a> 
 
-
-
+🐧<a target="_blank" href="https://www.debian.org/">Debian</a> 
+<a target="_blank" href="https://ubuntu.com/">Ubuntu</a> 
+<a target="_blank" href="https://archlinux.org/">ArchLinux</a> 
+<a target="_blank" href="https://www.bodhilinux.com/">Bodhi</a> 
+<a target="_blank" href="https://www.kali.org/">Kali</a> 
+<a target="_blank" href="https://manjaro.org/">Manjaro</a> 
+<a target="_blank" href="https://linuxmint.com/">Linux Mint</a> 
+<a target="_blank" href="https://www.redhat.com/">redhat</a> 
+<a target="_blank" href="https://fedoraproject.org/">Fedora</a> 
+<a target="_blank" href="https://www.deepin.org">Deepin</a> 
+<a target="_blank" href="https://zorin.com/">Zorin OS</a> 
+<a target="_blank" href="https://endlessos.com/">Endless OS</a> <br>
 
 
