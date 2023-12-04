@@ -1,13 +1,13 @@
 # 🌐网络
 这是一个包含了几种不同样式的简单网址模板，仅供参考。大家可以根据需要自行添加/删除网址，修改样式。<br>
-<b>新闻</b><br>
+<b>📰新闻</b><br>
 <a class="sxyhButton_01" style="padding-right: 30px;padding-top: 2px;" target="_blank" href="https://sohu.com/"><img src="images/ico/sohu.png" height="24" style="float: left;padding-left:30px;"/>搜狐</a>
 <a class="sxyhButton_01" style="background-color:#cc0000;color:#ffffff;" target="_blank" href="https://www.163.com/">网易</a>
 <a class="sxyhButton_01" style="background-color:transparent;color:#2a42bd;border:2px solid #2a42bd;padding-right: 30px;" target="_blank" href="https://www.zhibo8.cc/"><img src="images/ico/zhibo8.png" style="float: left;padding-left:30px;"/>直播吧</a>
 <a class="sxyhButton_01" style="background-color:#cc0000;border:2px solid #ff0000;color:#ffffff;" target="_blank" href="https://www.ithome.com">IT之家</a>
 <a class="sxyhButton_01" style="background-color:#ffffff;border:2px solid #ee7e13;color:#ee7e13;" target="_blank" href="https://www.mydrivers.com/">快科技</a>
 
-<b>邮箱</b><br>
+<b>📧邮箱</b><br>
 <a class="sxyhButton_02" target="_blank" href="https://126.com/" style="background-color:#1e7e3e;">126</a>
 <a class="sxyhButton_02" target="_blank" href="https://mail.163.com/" style="background-color:#d80a17;border:0px;">163</a>
 <a class="sxyhButton_02" target="_blank" href="https://mail.10086.cn/" style="background-color:#ffffff;color:#005bac;border:1px solid #005bac;">139</a>
@@ -18,7 +18,7 @@
 <a class="sxyhButton_02" target="_blank" href="https://mail.sohu.com" style="background-color:transparent;color:#f80000;border:2px solid #f0c911;">搜狐邮箱</a>
 <a class="sxyhButton_02" target="_blank" href="https://outlook.live.com/" style="background-color:#0178d4;border:0px;;">outlook</a>
 
-<b>网盘</b><br>
+<b>🖫网盘</b><br>
 <a class="sxyhButton_02" target="_blank" href="https://pan.baidu.com/" style="background-color:#ffffff;color:#2bc2fe;border:2px  solid #2bc2fe;">百度网盘</a>
 <a class="sxyhButton_02" target="_blank" href="https://www.aliyundrive.com/" style="background-color:#5770ef;">阿里云盘</a>
 <a class="sxyhButton_02" target="_blank" href="https://www.jianguoyun.com/" style="background-color:#bd7031;">坚果云</a>
@@ -30,12 +30,12 @@
 <a class="sxyhButton_02" target="_blank" href="https://pan.wo.cn" style="background-color:#ff843f;">联通云盘</a>
 <a class="sxyhButton_02" target="_blank" href="https://teracloud.jp/en/" style="background-color:#ef8200;">TeraCloud</a>
 
-<b>翻译</b><br>
+<b><font color=RED>中</font>翻译</b><br>
 <a class="sxyhButton_02" target="_blank" href="https://fanyi.baidu.com/" style="background-color:#2932e0;">百度翻译</a>
 <a class="sxyhButton_02" target="_blank" href="https://fanyi.qq.com/" style="background-color:#ab4ff8;">腾讯翻译</a>
 <a class="sxyhButton_02" target="_blank" href="https://fanyi.youdao.com/" style="border:1px solid #e908ea;background-color:#ff1135;">有道翻译</a>
 
-<b>文档</b><br>
+<b>📄文档</b><br>
 <a class="sxyhButton_03" target="_blank" href="https://docs.qq.com/" style="background-color:#1e6fff;">腾讯文档</a>
 <a class="sxyhButton_03" target="_blank" href="https://www.kdocs.cn/" style="background-color:#1e6fff;">金山文档</a>
 <a class="sxyhButton_03" target="_blank" href="https://shimo.im/" style="background-color:#000000;">石墨文档</a>
@@ -45,7 +45,8 @@
 <a class="sxyhButton_03" target="_blank" href="https://note.youdao.com/" style="background-color:#5b89ef;">有道</a>
 <a class="sxyhButton_03" target="_blank" href="https://www.notion.so/" style="background-color:#f0f0f0;color:#000000">Notion</a>
 
-<b>其它</b><br>
+
+<b>⚓其它</b><br>
 ♦ <a target="_blank" href="https://yiyan.baidu.com/">文心一言</a> 
 <a target="_blank" href="https://qianwen.aliyun.com/">通义千问</a> 
 <a target="_blank" href="https://techday.sensetime.com/">商量</a> 
@@ -68,18 +69,15 @@
 <a target="_blank" href="https://alist.nn.ci/zh/">AList</a> 
 <a target="_blank" href="https://os.tenfell.cn/">腾飞Webos</a> 
 <a target="_blank" href="https://www.zhenyunpan.com/">CloudDrive</a> <br>
-✧ <a target="_blank" href="https://www.debian.org/">Debian</a> 
-<a target="_blank" href="https://ubuntu.com/">Ubuntu</a> 
-<a target="_blank" href="https://archlinux.org/">ArchLinux</a> 
-<a target="_blank" href="https://www.bodhilinux.com/">Bodhi</a> 
-<a target="_blank" href="https://www.kali.org/">Kali</a> 
-<a target="_blank" href="https://manjaro.org/">Manjaro</a> 
-<a target="_blank" href="https://linuxmint.com/">Linux Mint</a> 
-<a target="_blank" href="https://www.redhat.com/">redhat</a> 
-<a target="_blank" href="https://fedoraproject.org/">Fedora</a> 
-<a target="_blank" href="https://www.deepin.org">Deepin</a> 
-<a target="_blank" href="https://zorin.com/">Zorin OS</a> 
-<a target="_blank" href="https://endlessos.com/">Endless OS</a> <br>
+✧ <a target="_blank" href="http://portableapps.com/">Portable Apps</a> 
+<a target="_blank" href="https://sourceforge.net/">SourceForge</a> 
+<a target="_blank" href="https://www.onlinedown.net/">华军软件园</a> 
+<a target="_blank" href="https://www.zol.com.cn/">中关村在线</a> 
+<a target="_blank" href="https://pc.qq.com/">腾讯软件</a> 
+<a target="_blank" href="https://baoku.360.cn/">360软件库</a> 
+<a target="_blank" href="https://www.xdowns.com/">绿盟</a> 
+<a target="_blank" href="https://www.ghxi.com/">果核剥壳</a> 
+<a target="_blank" href="https://www.appinn.com/">小众软件</a> 
 
 <style>
 body {
@@ -93,8 +91,8 @@ body {
 <script>
 //鼠标移动特效
 (function () {
-    var colors = ["#D61C59", "#E7D84B", "#1B8798"];
-    characters = ["♬", "♪"];
+    var colors = ["#FF0000", "#FF8000", "#FFFF00", "#00C000", "#00FFFF", "#0000FF", "#FF00FF", "#FFFFFF", "#000000"];
+    characters = ["♬", "♪", "¶", "♩", "♫"];
     elementGroup = [];
     //定义元素类
     class Element {
@@ -145,7 +143,7 @@ body {
         function () {
             Rander();
         },
-        1000 / 60);
+        1000 / 100);
     //添加事件监听器
     function AddListener() {
         //当前事件对象会作为第一个参数传入函数
