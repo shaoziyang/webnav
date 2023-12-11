@@ -75,7 +75,10 @@ if ($force || ($T > ($DT + $time_last)) || ($image == '') || (!file_exists($file
 			$canWrite = flock($fp, LOCK_EX);
 
 		fwrite($fp, 'body {'.PHP_EOL);
-		fwrite($fp, '    background-image: url(../'.$image_new.');'.PHP_EOL);
+		if (file_exists($base_path.'/scripts/backmask.png'))
+			fwrite($fp, '    background-image: url(../scripts/backmask.png), url(../'.$image_new.');'.PHP_EOL);
+		else
+			fwrite($fp, '    background-image: url(../'.$image_new.');'.PHP_EOL);
 		fwrite($fp, '    background-repeat: no-repeat;'.PHP_EOL);
 		fwrite($fp, '    background-size: cover;'.PHP_EOL);
 		fwrite($fp, '    background-attachment: fixed;'.PHP_EOL.'}');
