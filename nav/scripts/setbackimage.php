@@ -1,5 +1,8 @@
 <?php
 
+session_start();
+if (intval($_SESSION['sxyh']['authenticated'] ?? '')==0) exit;
+
 $path = dirname(__DIR__);
 $file_cfg = $path.'/scripts/wallpaper.txt';
 $file_css = $path.'/styles/wallpaper.css';

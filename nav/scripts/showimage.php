@@ -1,3 +1,4 @@
+<?php session_start(); if (intval($_SESSION['sxyh']['authenticated'] ?? '')==0) exit; ?>
 <html>
 <head>
 	<title>随心远航系统背景图</title>
@@ -21,7 +22,7 @@
 		exit('图像文件 < '.$fn.'> 文件不存在');
 
 	echo '<div class="sxyhText_01"><font size="+3em"><b>图像文件查看</b></font><br><br>';
-	echo '<a href="'.$url.$fn.'"><img width="800" src="'.$url.$fn.'"></a><br><br>';
+	echo '<a href="'.$url.$fn.'"><img width="800" src="'.$url.$fn.'" border="12" style="border-color:#e5a032; border-style:ridge;"></a><br><br>';
 
 	list($width, $height, $type, $attr) = getimagesize($base_path.$fn);
 	
@@ -43,7 +44,6 @@
 
 	<script>
 		function setbackimage() {
-
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET', 'setbackimage.php?file=<?= $fn ?>', true);
 			xhr.send(null);

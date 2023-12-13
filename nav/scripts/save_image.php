@@ -1,4 +1,6 @@
 <?php
+session_start();
+if (intval($_SESSION['sxyh']['authenticated'] ?? '')==0) exit;
 
 $url = $_SERVER["REQUEST_URI"];
 $p = parse_url($url);

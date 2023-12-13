@@ -1,3 +1,4 @@
+<?php session_start(); if (intval($_SESSION['sxyh']['authenticated'] ?? '')==0) exit; ?>
 <html>
 <head>
 	<title>随心远航背景图库</title>
@@ -26,7 +27,7 @@
 </head>
 <body>
 	<?php
-
+	
 	$base_path = dirname(__DIR__);
 	$file_cfg = $base_path.'/scripts/wallpaper.txt';
 

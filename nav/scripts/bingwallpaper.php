@@ -1,3 +1,4 @@
+<?php session_start();?>
 <html>
 <head>
 	<title>必应每日一图</title>
@@ -35,8 +36,10 @@
 		exit('获取必应每日一图失败，请刷新页面重新获取<br><br><div><a href="javascript:history.go()">刷新</a></div>');
 	}
 	?>
-
-	<button class="sxyhButton_02" style="width: 200px;" onclick="window.open('<?php echo 'save_image.php?url='.$imgurl.'&filename='.$dt.'-'.$fn; ?>')">保存图像到背景图库</button>
+	<?php 
+	if (intval($_SESSION['sxyh']['authenticated'] ?? '')>0)
+		echo '<button class="sxyhButton_02" style="width: 200px;" onclick="window.open(\'save_image.php?url='.$imgurl.'&filename='.$dt.'-'.$fn.'\')">保存图像到背景图库</button>';
+	?>
 	<br><br><br>
 	<div>
 		<a href="javascript:history.back(-1)">返回</a>

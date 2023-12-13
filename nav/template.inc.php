@@ -305,13 +305,13 @@
 				<p class="left-align" title='<?= $TXT->LastUpdate ?> <?= wdf_timestamp_format($DOC->TIMESTAMP,"Y-m-d H:i") ?>'><small><?php include 'scripts/showcounter.php'; ?></small></p>
 			</div><!-- /col -->
 			<div class="col m5 hide-on-med-and-down">
-				<p class="right-align"><small><a href="<?= $APP->PATH ?>scripts/showimagelist.php" title="显示系统背景图库">🖼️</a>&emsp;<a href="#" title="随心远航网址导航 <?php echo $VER_SXYH; ?>" class="about-link"><b>⛵¹ </b></a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
+				<p class="right-align"><small><a href="#" title="随心远航网址导航 <?php echo $VER_SXYH; ?>" class="about-link"><b>⛵¹ </b></a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo "&emsp;<a href='".$APP->PATH."scripts/showimagelist.php' title='显示系统背景图库'>🖼️</a> - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
 
 			</div><!-- /col -->
 			<div class="col s12 hide-on-large-only">
 				<p class="center-align" title='<?= $TXT->LastUpdate ?> <?= wdf_timestamp_format($DOC->TIMESTAMP,"Y-m-d H:i") ?>'><small><?php include 'scripts/showcounter.php'; ?></small></p>
 				<p class="center-align"><small><b><?= $APP->OWNER ?></b><br><?= $APP->NOTICE ?></small></p>
-				<p class="center-align"><small><a href="<?= $APP->PATH ?>scripts/showimagelist.php" title="显示系统背景图库">🖼️</a>&emsp;<a href="#" title="随心远航网址导航 <?php echo $VER_SXYH; ?>" class="about-link"><b>⛵¹ </b></a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo " - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
+				<p class="center-align"><small><a href="#" title="随心远航网址导航 <?php echo $VER_SXYH; ?>" class="about-link"><b>⛵¹ </b></a><?php if($APP->DEBUG){echo " ".$APP->VERSION;} if(Session::getInstance()->isAuthenticated()){echo "&emsp;<a href='".$APP->PATH."scripts/showimagelist.php' title='显示系统背景图库'>🖼️</a> - <a href=\"".$DOC->URL."?exit\">".$TXT->Logout."</a>";} ?></small></p>
 			</div><!-- /col -->
 		</div><!-- /row -->
 		<?php if($APP->DEBUG): ?>
