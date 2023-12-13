@@ -17,7 +17,7 @@
 	<meta http-equiv="pragma" content="no-store" />
 	<meta http-equiv="content-type" content="no-store, must-revalidate" />
 	<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT"/>
-	<?php $VER_SXYH='v1.0.20'; echo '<script> var navurl="'.$APP->PATH.'";</script>'; ?>
+	<?php $VER_SXYH='v1.1.0'; echo '<script> var navurl="'.$APP->PATH.'";</script>'; ?>
 	<?php include "scripts/wallpaper.php"; ?>
 	<link type="text/css" rel="stylesheet" href="<?= $APP->PATH ?>helpers/materialize-1.0.0/css/materialize.min.css" media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="<?= $APP->PATH ?>helpers/material-icons-1.13.6/css/material-icons.css" media="screen,projection"/>
