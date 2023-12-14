@@ -4,7 +4,22 @@
 	vertical-align: top;
 	margin: 5px;
 }
-        
+
+table {
+	border-collapse: collapse; /* 合并相邻单元格的边框 */
+	border-spacing: 0; /* 设置单元格之间的间距为0 */
+	margin: 0; /* 设置外边距为0 */
+}
+td, th { /* 对于所有td和th元素 */
+	vertical-align: top; /* 垂直顶部对齐 */
+	padding: 0; /* 设置内边距为0 */
+	border: none; /* 隐藏边框 */
+}
+.no-border {
+	border: none;
+	vertical-align: top;
+}
+		
 .sxyhButton_01 {
 	background-color:#f0c911;
 	border-radius:8px;
@@ -29,7 +44,6 @@
 	position:relative;
 	top:1px;
 }
-
 
 .sxyhButton_02 {
 	background-color:#579438;
@@ -80,3 +94,4 @@
 	position:relative;
 	top:1px;
 }
+
