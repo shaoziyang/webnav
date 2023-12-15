@@ -6,7 +6,9 @@ if (intval($_SESSION['sxyh']['authenticated'] ?? '')==0) exit;
 $base_path = dirname(__DIR__);
 $file_cfg = $base_path.'/scripts/wallpaper.txt';
 
-$DT_NEW = round($_GET['time']);
+$DT_NEW = 86400;
+if(isset($_GET['time']))
+	$DT_NEW = round($_GET['time']);
 
 $DT = 86400;
 $time_last = 0;

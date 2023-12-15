@@ -6,8 +6,10 @@ $file_css = $base_path.'/styles/wallpaper.css';
 $DT = 86400;
 $time_last = 0;
 $image = '';
+$force = false;
 
-$force = ($_GET['force'] == 1);
+if (isset($_GET['force']))
+	$force = ($_GET['force'] == 1);
 
 // 读取配置
 if (file_exists($file_cfg)) {

@@ -17,6 +17,9 @@
 	$base_path = dirname(__DIR__).'/images/';
 	$url = dirname(dirname($_SERVER["REQUEST_URI"])).'/images/';
 
+	if(!isset($_GET['file']))
+		exit('未指定图像文件');
+
 	$fn = $_GET['file'];
 	if (!file_exists($base_path.$fn) || ($fn == ''))
 		exit('图像文件 < '.$fn.'> 文件不存在');

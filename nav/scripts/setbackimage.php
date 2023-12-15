@@ -10,6 +10,9 @@ $DT = 86400;
 $time_last = 0;
 $image = '';
 
+if(!isset($_GET['file']))
+	exit('未指定图像文件');
+
 $fn = $_GET['file'];
 if (!file_exists($path.'/images/'.$fn) || ($fn == ''))
 	exit('图像文件 < '.$fn.'> 文件不存在');
