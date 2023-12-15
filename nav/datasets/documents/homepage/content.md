@@ -26,9 +26,11 @@
 	}	
 </style>
 
-<script>document.write('<style>body{  background-image: url('+navurl+'scripts/backmask.png), url('+navurl+'scripts/bingwallpaperurl.php);  background-repeat: no-repeat;  background-size: cover;  background-attachment: fixed;}<\/style>');</script>
+<script>document.write( '<script src="'+navurl+'scripts\/bingwallpaper.js"><\/script>')</script>
 
 <div class="sxyhDiv_01">
+	<script>document.write( '<script src="'+navurl+'scripts\/diary.js"><\/script>')</script>
+	<span class="diaryText" id='diarytext'> </span>
 	<form action="https://cn.bing.com/search" target="_blank">
 		<img src="/nav/logo.png">
 		<input autocomplete="on" maxlength="100" size="40" name="q" type="texts" placeholder="欢迎使用随心远航，请输入搜索关键词" style="border:1px solid #225522;border-radius:12px;height: 28px;line-height: 28px;padding-left:16px" />

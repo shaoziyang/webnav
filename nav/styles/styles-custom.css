@@ -5,6 +5,12 @@
 	margin: 5px;
 }
 
+.diaryText {
+	font-size:1.5em;
+	color:#00C0FF;
+	text-shadow: 1px 1px 2px black;
+}
+
 table {
 	border-collapse: collapse; /* 合并相邻单元格的边框 */
 	border-spacing: 0; /* 设置单元格之间的间距为0 */
