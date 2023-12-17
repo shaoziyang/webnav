@@ -4,8 +4,14 @@ $mode = 'day';
 if(isset($_GET['mode']))
 	$mode = $_GET['mode'];
 
+if (!file_exists('diary.txt'))
+	exit('学而时习之，不亦说乎');
+
 $lines = file('diary.txt', FILE_SKIP_EMPTY_LINES|FILE_IGNORE_NEW_LINES);
 $nl = count($lines);
+
+if ($nl == 0)
+	exit('学而时习之，不亦说乎');
 
 if ($mode == 'day') {
 	$day = -1;
@@ -23,7 +29,11 @@ if ($mode == 'day') {
 		}
 	}
 	if($new) {
-		$n = rand(0, $nl);
+		if ($nl > 1) {
+			$x = $n;
+			while ($x == $n)
+				$n = rand(0, $nl);
+		}
 		$fp = fopen('diary.tmp', "w+");
 		if ($fp) {
 			$canWrite = false;
