@@ -1,0 +1,1 @@
+document.write('<style>body{  background-image: url('+navurl+'scripts/backmask_90.png), url('+navurl+'scripts/bingwallpaperurl.php);  background-repeat: no-repeat;  background-size: cover;  background-attachment: fixed;}<\/style>');
