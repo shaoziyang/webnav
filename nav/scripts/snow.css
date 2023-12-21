@@ -1,0 +1,112 @@
+.snowflake {
+  position: absolute;
+  text-align: center;
+  z-index: 9999;
+  top: -20px;
+  color: white;
+  font-size: 16px;
+  text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 2px;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+.snowflake span {
+  position: absolute;
+  display: block;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  transform-origin: 50% -100%;
+}
+.snowflake.tiny { font-size: 0.5em; }
+.snowflake.small { font-size: 1em; }
+.snowflake.medium { font-size: 2em; }
+.snowflake.large { font-size: 3em; }
+
+@keyframes fade {
+  0%   { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes drop {
+  0%   { transform: translate(0px, -50px); }
+  100% { transform: translate(0px, 450px); }
+}
+@keyframes clockwiseSpin {
+  0%   { transform: rotate(-50deg); }
+  100% { transform: rotate(50deg); }
+}
+@keyframes counterclockwiseSpin  {
+  0%   { transform: rotate(50deg); }
+  100% { transform: rotate(-50deg); }
+}
+  #snowflakeCounter {
+    position:relative;
+    float:right;
+    margin-right:10px;
+    margin-top:-9px;
+    text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 2px;
+    display: none;
+  }
+  #snowflakeCounter .snowflakeSymbol {
+    position:absolute;
+    right:-9px;
+    top:-6px;
+    font-size:26px;
+  }
+/* santa*/
+.snowflakeSanta {
+  position: fixed;
+  width:540px;
+  height:0px;
+  top: 130%;
+  left: 38%;
+  margin: 0 auto 0 auto;
+  box-sizing: border-box;
+  animation-name: circle;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+@keyframes circle {
+  0% { transform: rotate(-180deg) translateX(150%) rotate(0deg); opacity:0 }
+  10%   { opacity:1 }
+  90%   { opacity:1 }
+  100% { transform: rotate(0deg) translateX(150%) rotate(-180deg); opacity:0 }
+}
+.innerSanta {
+  width:540px;
+  height:160px;
+  background:url(/images/310514.jpg) 4px bottom no-repeat;
+  animation-name: rotateAndScale;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+@keyframes rotateAndScale {
+  0% {transform:translateX(80%) rotate(-40deg) scale(0.4)}
+  50% {transform:scale(1)}
+  100% {transform:translateX(-80%) rotate(40deg) scale(0.4)}
+}
+.santatail {
+  background-image: url(/images/314904.jpg); /*sneeuwvlokken /images/310519.jpg*/
+  background-repeat: repeat;
+  background-position: 0 0;
+  width:300px;
+  height:100px;
+  position: absolute;
+  right:-270px;
+  top:-70px;
+  border-radius: 50px;
+  transform: rotate(-16deg);
+  animation-name: animateSantaTail;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes animateSantaTail {
+  from {background-position: -300px 0; }
+  to { background-position: 300px 0; }
+}
