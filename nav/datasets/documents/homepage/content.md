@@ -1,4 +1,3 @@
-
 <style>
 	.sxyhDiv_01 {
 		text-align: center;
@@ -32,9 +31,9 @@
 	<script>document.write( '<script src="'+navurl+'scripts\/diary.js"><\/script>')</script>
 	<span class="diaryText" id='diarytext'> </span>
 	<form action="https://cn.bing.com/search" target="_blank">
-		<img src="/nav/logo.png">
+		<img src="/nav/logo.png" style="position: relative; top:10px;">
 		<input autocomplete="on" maxlength="100" size="40" name="q" type="texts" placeholder="欢迎使用随心远航，请输入搜索关键词" style="border:1px solid #225522;border-radius:12px;height: 28px;line-height: 28px;padding-left:16px" />
-		<input type="submit" class="sxyh_search" value="bing" style="“ /></form>
+		<input type="submit" class="sxyh_search" value="🔍︎" style="border:0px solid transparent;border-radius:12px;	background:transparent; position: relative; left:-40px;top:0px;“ /></form>
 </div>
 
 
@@ -164,6 +163,8 @@
 			<div class="sxyhDiv_03">
 				<a href="https://www.chinanews.com/scroll-news/news1.html" target="_blank">滚动新闻</a>
 			</div>
+			<div class="sxyhDiv_03">
+				<a href="https://tophub.today/n/yjvQy54vbg" target="_blank">环球视野</a>
 			</div>
 		</td>
 	</tr>
