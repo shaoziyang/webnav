@@ -1,5 +1,8 @@
 # ⛵随心远航系统说明
 
+项目已切更新到 [⛵²webnav2](https://github.com/shaoziyang/webnav2)
+
+
 [⛵随心远航](https://github.com/shaoziyang/webnav)是一个可以 DIY 的开源个人网址导航系统，它基于开源的 markdown [WikiDocs](https://github.com/Zavy86/wikidocs)系统，小巧快速，使用方便，维护简单，无需数据库。
 
 ![](nav/logo.png)
